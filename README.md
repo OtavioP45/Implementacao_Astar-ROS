@@ -1,8 +1,8 @@
 # RMA - Projeto de Implementação 1
 Disciplina Robôs Móveis Autônomos 2022/01
 Grupo:
-  - Daniel Amaral Brigante
-  - Otavio de Paiva Pinheiro Neto
+  - Daniel Amaral Brigante - 769867
+  - Otavio de Paiva Pinheiro Neto - 769664
 
 ## Criação do Workspace 
 
