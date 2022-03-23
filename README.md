@@ -81,10 +81,10 @@ Caso a variável de ambiente $ROS_PACKAGE_PATH indique um workspace diferente de
 cd ~/novo_workspace/
 source devel/setup.bash
 ```
+### Launch
 
 Com o workspace corretamente selecionado, a simulação pode ser iniciada a partir do .launch presente no pacote smb_highlevel_controller:
 
-### Launch
 ```shell
 cd ~/novo_workspace/
 roslaunch src/RMA/smb_highlevel_controller/launch/smb_highlevel_controller.launch 
