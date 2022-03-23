@@ -39,5 +39,6 @@ echo $ROS_PACKAGE_PATH
 ## Problemas com o /tópico rslidar_points
 
 ```shell
-
+cd ~/novo_workspace/
+bash src/RMA/smb_highlevel_controller/scripts/fix_rslidar.sh
 ```
