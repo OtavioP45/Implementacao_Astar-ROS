@@ -3,8 +3,7 @@
 <launch>
 
 	<!-- GAZEBO ARGUMENTS -->
-	<!-- param name="robot_description" command="$(find xacro)/xacro /home/danielb/workspace/src/smb_common/smb_description/urdf/smb.urdf.xacro"/ -->
-	<param name="robot_description" command="cat /home/danielb/workspace/src/smb_common/smb_description/resources/smb.urdf"/>
+	
 	<!-- Run Gazebo headless -->
 	<arg name="headless"                              default="false"/>
 	<!-- Model path -->
