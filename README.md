@@ -46,7 +46,7 @@ echo $ROS_PACKAGE_PATH
 ## Rodando a Simulação
 
 ```shell
-cd ~/novo_workspace/src
+cd ~/novo_workspace/
 roslaunch src/RMA/smb_highlevel_controller/launch/smb_highlevel_controller.launch 
 ```
 
