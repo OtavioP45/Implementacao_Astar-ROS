@@ -18,6 +18,8 @@ Este repositório é composto por três conjuntos de pacotes:
 
 Este guia presume que o usuário possua uma distribuição linux Ubuntu 20.04 com os pacotes básicos do ROS já instalados no sistema, além do Gazebo, Catkin, Python etc.
 
+Após os passos deste guia, o workspace criado deve ser capaz de funcionar de maneira independente dos workspaces usados durante a disciplina.
+
 ### Criação do Workspace 
 
 Um workspace próprio, diferente do utilizado ao longo da disciplina, é criado para compilar e executar o projeto de forma independente. Nos comandos, é usado o nome "novo_workspace" para indicar o workspace que será criado.
