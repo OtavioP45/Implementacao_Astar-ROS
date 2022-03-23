@@ -40,6 +40,14 @@ source ../devel/setup.bash
 ```shell
 echo $ROS_PACKAGE_PATH 
 ```
+## Rodando a Simulação
+
+```shell
+cd ~/novo_workspace/src
+roslaunch src/RMA/smb_highlevel_controller/launch/smb_highlevel_controller.launch 
+```
+
+## Solução de Problemas
 
 ### Problemas com o tópico /rslidar_points
 
