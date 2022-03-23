@@ -65,6 +65,16 @@ source ../devel/setup.bash
 
 ## Rodando a Simulação
 
+### Problemas com o tópico /rslidar_points
+
+Caso ocorra algum problema com o tópico /rslidar_points, há um script para substituir um arquivo original .xacro do Velodyne por outra versão disponibilizada durante a disciplina.
+
+É recomendado executar esse script antes de tentar rodar a simulação. A alteração feita pelo script pode ser facilmente desfeita pelo apt ao atualizar o pacote.
+
+```shell
+cd ~/novo_workspace/
+bash src/RMA/smb_highlevel_controller/scripts/fix_rslidar.sh
+```
 
 ### Verificar o Workspace
 
@@ -81,16 +91,6 @@ Caso a variável de ambiente $ROS_PACKAGE_PATH indique um workspace diferente de
 ```shell
 cd ~/novo_workspace/
 source devel/setup.bash
-```
-### Problemas com o tópico /rslidar_points
-
-Caso ocorra algum problema com o tópico /rslidar_points, há um script para substituir um arquivo original .xacro do Velodyne por outra versão disponibilizada durante a disciplina.
-
-É recomendado executar esse script antes de tentar rodar a simulação. A alteração feita pelo script pode ser facilmente desfeita pelo apt ao atualizar o pacote.
-
-```shell
-cd ~/novo_workspace/
-bash src/RMA/smb_highlevel_controller/scripts/fix_rslidar.sh
 ```
 
 ### Launch
