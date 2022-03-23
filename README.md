@@ -67,7 +67,7 @@ source ../devel/setup.bash
 
 ### Verificar o Workspace
 
-Ao realizar os passos da semana 1 da disciplina, o arquivo .bashrc foi configurado para definir automaticamente as variáveis de ambiente para escolher os workspaces "~/workspace" e "~/mrs_workspace" como atuais. Isso será feito toda vez que um novo terminal for iniciado. Sendo assim, devemos alterar o workspace para o "~/novo_workspace" criado durante este guia antes de rodarmos a simulação.
+Ao realizar os passos da semana 1 da disciplina, o arquivo .bashrc foi configurado para definir automaticamente as variáveis de ambiente para escolher os workspaces "\~/workspace" e "\~/mrs_workspace" como atuais. Isso será feito toda vez que um novo terminal for iniciado. Sendo assim, devemos alterar o workspace para o "\~/novo_workspace" criado durante este guia antes de rodarmos a simulação.
 
 Para verificar o path onde o ROS busca pelos pacotes, podemos usar o seguinte comando. Ele deve indicar os paths dentro da pasta "~/novo_workspace".
 
@@ -75,7 +75,7 @@ Para verificar o path onde o ROS busca pelos pacotes, podemos usar o seguinte co
 echo $ROS_PACKAGE_PATH 
 ```
 
-Caso a variável de ambiente $ROS_PACKAGE_PATH indique um workspace diferente de "~/novo_workspace" ou um novo terminal tenha sido inicializado, podemos selecionar o workspace criado para este projeto repetindo o seguinte passo: 
+Caso a variável de ambiente $ROS_PACKAGE_PATH indique um workspace diferente de "\~/novo_workspace" ou um novo terminal tenha sido inicializado, podemos selecionar o workspace criado para este projeto repetindo o seguinte passo: 
 
 ```shell
 cd ~/novo_workspace/
