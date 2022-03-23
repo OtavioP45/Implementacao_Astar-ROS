@@ -11,6 +11,7 @@ source /opt/ros/noetic/setup.bash
 mkdir -p ~/novo_workspace/src
 cd ~/novo_workspace/
 catkin_make
+source devel/setup.bash
 catkin init
 catkin clean
 
@@ -26,5 +27,5 @@ sudo apt install ros-noetic-cmake-modules ros-noetic-velodyne-gazebo-plugins pyt
 pip3 install numpy matplotlib scipy
 git clone https://github.com/danielb-28/RMA.git
 catkin build
-source ../devel/setup.sh
+source ../devel/setup.bash
 ```
