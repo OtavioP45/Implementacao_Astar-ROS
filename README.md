@@ -65,14 +65,22 @@ source ../devel/setup.bash
 
 ### Verificar o Workspace
 
+Ao realizar os passos da semana 1 da disciplina, o arquivo .bashrc foi configurado para definir automaticamente as variáveis de ambiente para escolher os workspaces "~/workspace" e "~/mrs_workspace" como atuais. Isso será feito toda vez que um novo terminal for iniciado. Sendo assim, devemos alterar o workspace para o "~/novo_workspace" criado durante este guia antes de rodarmos a simulação.
+
+Para verificar o path onde o ROS busca pelos pacotes, podemos usar o seguinte comando. Ele deve indicar os paths dentro da pasta "~/novo_workspace".
+
 ```shell
 echo $ROS_PACKAGE_PATH 
 ```
+
+Caso a variável de ambiente $ROS_PACKAGE_PATH indique um workspace diferente de "~/novo_workspace" ou um novo terminal tenha sido inicializado, podemos selecionar o workspace criado para este projeto repetindo o seguinte passo: 
 
 ```shell
 cd ~/novo_workspace/
 source devel/setup.bash
 ```
+
+Com o workspace corretamente selecionado, a simulação pode ser iniciada a partir do .launch presente no pacote smb_highlevel_controller:
 
 ### Launch
 ```shell
@@ -83,6 +91,8 @@ roslaunch src/RMA/smb_highlevel_controller/launch/smb_highlevel_controller.launc
 ## Solução de Problemas
 
 ### Problemas com o tópico /rslidar_points
+
+Caso ocorra algum problema com o tópico /rslidar_points, há um script para substituir um arquivo original .xacro do Velodyne por outra versão disponibilizada durante a disciplina: 
 
 ```shell
 cd ~/novo_workspace/
