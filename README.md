@@ -5,7 +5,9 @@ Grupo:
   - Daniel Amaral Brigante - 769867
   - Otavio de Paiva Pinheiro Neto - 769664
 
-## Criação do Workspace 
+## Guia de Instalação
+
+### Criação do Workspace 
 
 ```shell
 source /opt/ros/noetic/setup.bash
@@ -18,7 +20,7 @@ catkin clean
 
 ```
 
-## Pacotes ROS
+### Pacotes ROS
 
 ```shell
 cd ~/novo_workspace/src
@@ -31,13 +33,15 @@ git clone https://github.com/danielb-28/RMA.git
 catkin build
 source ../devel/setup.bash
 ```
-## Verificar o Workspace
+## Após a Instalação
+
+### Verificar o Workspace
 
 ```shell
 echo $ROS_PACKAGE_PATH 
 ```
 
-## Problemas com o tópico /rslidar_points
+### Problemas com o tópico /rslidar_points
 
 ```shell
 cd ~/novo_workspace/
