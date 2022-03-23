@@ -36,7 +36,7 @@ source ../devel/setup.bash
 echo $ROS_PACKAGE_PATH 
 ```
 
-## Problemas com o /tópico rslidar_points
+## Problemas com o tópico /rslidar_points
 
 ```shell
 cd ~/novo_workspace/
