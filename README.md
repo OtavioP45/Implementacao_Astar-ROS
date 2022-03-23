@@ -30,3 +30,14 @@ git clone https://github.com/danielb-28/RMA.git
 catkin build
 source ../devel/setup.bash
 ```
+## Verificar o Workspace
+
+```shell
+echo $ROS_PACKAGE_PATH 
+```
+
+## Problemas com o /tópico rslidar_points
+
+```shell
+
+```
