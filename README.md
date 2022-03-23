@@ -7,16 +7,18 @@ Grupo:
 ## Criação do Workspace 
 
 ```bash
-mkdir 
+$ source /opt/ros/noetic/setup.bash
+$ mkdir -p ~/novo_workspace/src
+$ cd ~/novo_workspace/
+$ catkin_make
 
-catkin_make
-catkin init
-catkin clean
+$ catkin init
+$catkin clean
 
 ```
 
-sudo apt install ros-noetic-gazebo-ros
+## Pacotes ROS
+
+```bash
 sudo apt install ros-noetic-nav-core
-sudo apt install ros-noetic-ros-base
-sudo apt install ros-noetic-gazebo-plugins
-sudo apt install ros-noetic-gazebo-ros-control
+```
