@@ -6,7 +6,7 @@ Grupo:
 
 ## Criação do Workspace 
 
-```bash
+```shell
 $ source /opt/ros/noetic/setup.bash
 $ mkdir -p ~/novo_workspace/src
 $ cd ~/novo_workspace/
@@ -19,7 +19,7 @@ $catkin clean
 
 ## Pacotes ROS
 
-```bash
+```console
 $ cd ~/novo_workspace/src
 $ git clone https://github.com/ros-perception/slam_gmapping.git
 $ git clone https://github.com/ros-planning/navigation.git
