@@ -36,15 +36,21 @@ sudo apt install ros-noetic-cmake-modules ros-noetic-velodyne-gazebo-plugins pyt
 pip3 install numpy matplotlib scipy
 ```
 
-## Após a Instalação
+## Rodando a Simulação
+
 
 ### Verificar o Workspace
 
 ```shell
 echo $ROS_PACKAGE_PATH 
 ```
-## Rodando a Simulação
 
+```shell
+cd ~/novo_workspace/
+source devel/setup.bash
+```
+
+### Launch
 ```shell
 cd ~/novo_workspace/
 roslaunch src/RMA/smb_highlevel_controller/launch/smb_highlevel_controller.launch 
