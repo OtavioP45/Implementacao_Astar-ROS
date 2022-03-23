@@ -11,9 +11,8 @@ $ source /opt/ros/noetic/setup.bash
 $ mkdir -p ~/novo_workspace/src
 $ cd ~/novo_workspace/
 $ catkin_make
-
 $ catkin init
-$catkin clean
+$ catkin clean
 
 ```
 
