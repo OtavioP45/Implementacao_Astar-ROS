@@ -48,9 +48,9 @@ pip3 install numpy matplotlib scipy
 ### Build
 
 Os pacotes que serão montados no workspace criado são provenientes de três repositórios:
-  - Slam Gmapping -> Usado no mapeamento do ambiente
-  - Navigation -> Usado pelo controlador para localizar o robô através do sistema AMCL
-  - RMA -> Pacotes deste repositório
+  - Slam Gmapping -> Usado no mapeamento do ambiente.
+  - Navigation -> Usado pelo controlador para localizar o robô através do sistema AMCL.
+  - RMA -> Pacotes deste repositório.
 
 A montagem dos pacotes deverá ser feita seguindo os seguintes passos:
 
