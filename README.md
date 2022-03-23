@@ -10,9 +10,9 @@ Grupo:
 ## Pacotes ROS neste repositório
 
 Este repositório é composto por três conjuntos de pacotes:
-  - smb_common -> Configurações, descrições e controlador de velocidade do robô SMB utilizado
+  - smb_common -> Configurações, descrições e controlador de velocidade do robô SMB utilizado.
   - smb_highlevel_controll -> Planejador A* e controlador desenvolvidos durante o projeto. Além de arquivos auxiliares, como modelos para o ambiente de simulação no Gazebo, configurações do RViz etc. 
-  - tf2 -> Adicionado a este repositório para torná-lo independente do mrs_workspace usado durante a disciplina (sem ele, ocorriam problemas com o timestamp das mensagens do robot_state_publisher)
+  - tf2 -> Adicionado a este repositório para torná-lo independente do mrs_workspace usado durante a disciplina (sem ele, ocorriam problemas com o timestamp das mensagens do robot_state_publisher).
 
 ## Guia de Instalação
 
@@ -82,6 +82,17 @@ Caso a variável de ambiente $ROS_PACKAGE_PATH indique um workspace diferente de
 cd ~/novo_workspace/
 source devel/setup.bash
 ```
+### Problemas com o tópico /rslidar_points
+
+Caso ocorra algum problema com o tópico /rslidar_points, há um script para substituir um arquivo original .xacro do Velodyne por outra versão disponibilizada durante a disciplina.
+
+É recomendado executar esse script antes de tentar rodar a simulação. A alteração feita pelo script pode ser facilmente desfeita pelo apt ao atualizar o pacote.
+
+```shell
+cd ~/novo_workspace/
+bash src/RMA/smb_highlevel_controller/scripts/fix_rslidar.sh
+```
+
 ### Launch
 
 Com o workspace corretamente selecionado, a simulação pode ser iniciada a partir do .launch presente no pacote smb_highlevel_controller:
@@ -89,15 +100,4 @@ Com o workspace corretamente selecionado, a simulação pode ser iniciada a part
 ```shell
 cd ~/novo_workspace/
 roslaunch src/RMA/smb_highlevel_controller/launch/smb_highlevel_controller.launch 
-```
-
-## Solução de Problemas
-
-### Problemas com o tópico /rslidar_points
-
-Caso ocorra algum problema com o tópico /rslidar_points, há um script para substituir um arquivo original .xacro do Velodyne por outra versão disponibilizada durante a disciplina: 
-
-```shell
-cd ~/novo_workspace/
-bash src/RMA/smb_highlevel_controller/scripts/fix_rslidar.sh
 ```
