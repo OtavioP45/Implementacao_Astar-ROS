@@ -19,7 +19,7 @@ catkin clean
 
 ## Pacotes ROS
 
-```console
+```shell
 cd ~/novo_workspace/src
 git clone https://github.com/ros-perception/slam_gmapping.git
 git clone https://github.com/ros-planning/navigation.git
