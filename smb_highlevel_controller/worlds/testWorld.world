@@ -75,7 +75,7 @@
           <cast_shadows>false</cast_shadows>
           <geometry>
             <mesh>
-              <uri>file://grass_plane/meshes/grass_plane.dae</uri>
+              <uri>model://grass_plane/meshes/grass_plane.dae</uri>
             </mesh>
           </geometry>
         </visual>

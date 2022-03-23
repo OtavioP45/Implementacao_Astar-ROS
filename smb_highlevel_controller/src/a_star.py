@@ -96,11 +96,6 @@ def main():
     for i in range(len(rx)):
         Pontos.append([(rx[-1-i] - sx)*TamR/TamM, (ry[-1-i] - sy)*TamR/TamM]) # Armazena os pontos gerados
 
-    if show_animation:  # Plot dos checkpoints e ligando os pontos
-        plt.plot(rx, ry, "-r")
-        plt.pause(0.001)
-        plt.show(block=False)
-
     # Publicacao do caminho encontrado
 
     pub = rospy.Publisher('Checkpoints', PoseArray, queue_size = 10)
@@ -123,7 +118,12 @@ def main():
 
     while not rospy.is_shutdown():
         pub.publish(Mensagem)
+        if show_animation:  # Plot dos checkpoints e ligando os pontos
+        	plt.plot(rx, ry, "-r")
+        	plt.pause(0.001)
+        	plt.show(block=False)
         taxa.sleep()
+        
         
 # Planejador A*  ====================================================================================
 
