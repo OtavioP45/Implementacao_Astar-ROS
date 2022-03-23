@@ -7,6 +7,13 @@ Grupo:
   - Daniel Amaral Brigante - 769867
   - Otavio de Paiva Pinheiro Neto - 769664
 
+## Pacotes ROS neste repositório
+
+Este repositório é composto por três conjuntos de pacotes:
+  - smb_common -> Configurações, descrições e controlador de velocidade do robô SMB utilizado
+  - smb_highlevel_controll -> Planejador A* e controlador desenvolvidos durante o projeto. Além de arquivos auxiliares, como modelos para o ambiente de simulação no Gazebo, configurações do RViz etc. 
+  - tf2 -> Adicionado a este repositório para torná-lo independente do mrs_workspace usado durante a disciplina (sem ele, ocorriam problemas com o timestamp das mensagens do robot_state_publisher)
+
 ## Guia de Instalação
 
 Este guia presume que o usuário possua uma distribuição linux Ubuntu 20.04 com os pacotes básicos do ROS já instalados no sistema, além do Gazebo, Catkin, Python etc.
@@ -26,7 +33,7 @@ catkin clean
 
 ```
 
-### Pacotes ROS
+### Dependências
 
 É recomendado verificar se os seguintes pacotes do ROS e módulos do Python estão instalados no sistema, pois eles são dependências dos pacotes que serão compilados nos próximos passos:
 
@@ -35,7 +42,14 @@ sudo apt install ros-noetic-rospy ros-noetic-roscpp ros-noetic-sensor-msgs ros-n
 
 pip3 install numpy matplotlib scipy
 ```
+### Build
 
+Os pacotes que serão montados no workspace criado são provenientes de três repositórios:
+  - Slam Gmapping -> Usado no mapeamento do ambiente
+  - Navigation -> Usado pelo controlador para localizar o robô através do sistema AMCL
+  - RMA -> Pacotes deste repositório
+
+A montagem dos pacotes deverá ser feita seguindo os seguintes passos:
 
 ```shell
 cd ~/novo_workspace/src
