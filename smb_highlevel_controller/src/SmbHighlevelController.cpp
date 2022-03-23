@@ -103,7 +103,10 @@ void SmbHighlevelController::SubscriberAmclCallback(const geometry_msgs::PoseWit
 	if(abs(x_atual - x_obj) < INTERVALO_OBJ && abs(y_atual - y_obj) < INTERVALO_OBJ){
 
 		// Atualizacao do objetivo
-		if(numero_no+1 < pontos_caminho.size()) numero_no++;
+		if(numero_no+1 < pontos_caminho.size()){
+			ROS_INFO_STREAM("O robo atingiu o checkpoint: " << numero_no); // DEBUG 
+			numero_no++;
+		}
 		else if (parar_robo == false) {
 			parar_robo = true;
 			ROS_INFO_STREAM("O robo atingiu seu objetivo"); // DEBUG
@@ -111,8 +114,6 @@ void SmbHighlevelController::SubscriberAmclCallback(const geometry_msgs::PoseWit
 
 		x_obj = pontos_caminho[numero_no][0];
 		y_obj = pontos_caminho[numero_no][1];
-		
-		ROS_INFO_STREAM("O robo atingiu o checkpoint: " << numero_no); // DEBUG
 
 		// Marcador para o novo objetivo
 		visualization_msgs::Marker ponto;
